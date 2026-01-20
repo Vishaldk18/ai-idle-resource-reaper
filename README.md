@@ -71,7 +71,8 @@ OBSERVE → THINK → DECIDE → RECOMMEND
 ---
  
 ## 🗂 Project Structure
- 
+
+'''
 ai-idle-resource-reaper/
 ├── agent/
 │   ├── discovery.py     # Discover idle AWS resources
@@ -82,6 +83,7 @@ ai-idle-resource-reaper/
 │   └── waste_analysis.txt
 ├── requirements.txt
 └── README.md
+ '''
  
 ---
  
