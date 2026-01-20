@@ -9,7 +9,7 @@ def days_between(start_time):
     return (now - start_time).days
 
 def get_stopped_ec2_instances():
-    ec2 = boto3.client("ec2",region_name="eu-north-1")
+    ec2 = boto3.client("ec2",region_name="Replace_With_AWS_Region")
     response = ec2.describe_instances(
           Filters=[
               {
@@ -31,7 +31,7 @@ def get_stopped_ec2_instances():
     return instances 
     
 def get_unattached_ebs_volumes():
-    ec2 = boto3.client("ec2",region_name="eu-north-1")
+    ec2 = boto3.client("ec2",region_name="Replace_With_AWS_Region")
     response = ec2.describe_volumes(
             Filters=[
                 {"Name": "status", "Values":["available"]}
@@ -53,7 +53,7 @@ def get_unattached_ebs_volumes():
     return volumes 
         
 def get_unused_elastic_ips():
-    ec2 = boto3.client("ec2",region_name="eu-north-1")
+    ec2 = boto3.client("ec2",region_name="Replace_With_AWS_Region")
     response = ec2.describe_addresses()
             
     eips = []
