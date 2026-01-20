@@ -125,7 +125,7 @@ For each idle resource, the AI generates:
 - Confidence score
  
 ### Example AI Output
- 
+ ```
 {
   "waste_reason": "Unattached EBS volumes incur storage costs without providing value",
   "severity": "Medium",
@@ -133,7 +133,7 @@ For each idle resource, the AI generates:
   "recommended_action": "Delete after confirming no backups are required",
   "confidence": 0.86
 }
- 
+ ```
 ---
  
 ## 🛑 Guardrails
@@ -165,7 +165,7 @@ python agent/main.py
 ---
  
 ## 📤 Sample Output
- 
+ ```
 {
   "resource": {
     "type": "ebs",
@@ -185,7 +185,7 @@ python agent/main.py
   },
   "mode": "dry-run"
 }
- 
+ ```
 ---
  
 ## 🧹 Cleanup
